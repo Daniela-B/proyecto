@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<a href="/lista"><button name="inicio">Regresar</button></a>
+<body>
+<form class="formulario" action="/update/{{datos.0}}" method="POST">
+  <div class="contenedor">
+    <div class="input-contenedor">
+    ¿Cómo estuvo el sonido del evento?
+    <input type="text" name="P1" id="P1" value="{{ datos.2 }}" readonly><br>
+    </div>
+    <div class="input-contendor">
+    ¿El mesero fue amable con usted?
+    <input type="text" name="P2" id="P2" value="{{ datos.3 }}"readonly><br>
+    </div>
+    <div class="input-contenedor">
+    ¿La iluminación del evento fue adecuada?
+    <input type="text" name="P3" id="P3" value="{{ datos.4 }}"readonly><br>
+    </div>
+    <div class="input-contenedor">
+    La puntualidad del host fue:<input type="text" name="P4" id="P4" value="{{ datos.5 }}"readonly><br>
+    </div>
+    <di>
+    Califique los baños: 
+    <input type="text" name="P5" id="P5" value="{{ datos.6 }}"readonly><br>
+    </div>
+    <div class="input-contenedor">
+    ¿Qué fue lo que más te gusto del lugar?<input type="text" name="P6" id="P6" value="{{ datos.7 }}"readonly><br>
+    </div>
+    <div class="input-contenedor">
+    Calificación: <input type="text" name="P7" id="P7" value="{{ datos.9 }}"><br>
+    </div>
+    <button type="submit" class="btn">Guardar</button>
+  </div>
+  </form>
+  </body>
+  <style>
+    body
+    {
+      font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	    margin: 0;
+	    background-size: cover;
+	    background-attachment: fixed;
+    }
+    .formulario
+{
+	background: #fff;
+	margin-top: 100px;
+	padding: 3px;
+}
+input 
+{
+	font-size: 20px;
+	width: 80%;
+	padding: 15px;
+	border: none;
+}
+.input-contenedor
+{
+	margin-bottom: 15px;
+	border: 1px solid #aaa;
+}
+@media(min-width:768px)
+{
+	.formulario{
+		margin: auto;
+		width:450px;
+		margin-top: 200px;
+		border-radius: 2%;
+		
+	}
+}
+
+.btn{
+	border:none;
+	width: 40%;
+	color:white;
+	font-size: 15px;
+  background:lightseagreen;
+  padding: 10px 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+.btn:hover
+{
+  background-color:lightblue;
+}
+body
+{
+  background-color: cadetblue;
+}
+  </style>
+  </html>

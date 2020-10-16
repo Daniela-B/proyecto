@@ -1,0 +1,71 @@
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+<p>{{message}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<a href="/inicio"><button name="inicio">Volver al inicio</button></a><br>
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" >
+
+</head>
+<body>
+<table class="table table-striped table-bordered bg-white table-sm">
+	<div id='main-container'>
+		<thead>
+			<tr>
+				<td>#Encuesta</td>
+				<td>¿Cómo estuvo el sonido del evento?</td>
+				<td>¿El mesero fue amable con usted?</td>
+				<td>¿La iluminación del evento fue adecuada?</td>
+				<td>La puntualidad del host fue:</td>
+				<td>Califique los baños: </td>
+				<td>¿Qué fue lo que más te gusto del lugar?</td>
+				<td>Calificación</td>
+				<td>Operadores</td>
+			</tr>
+		</thead>
+		<tbody>
+			{% for encuesta in encuestas %}
+			<tr>
+				<td>{{ encuesta.0 }}</td>
+				<td>{{ encuesta.2 }}</td>
+				<td>{{ encuesta.3 }}</td>
+				<td>{{ encuesta.4 }}</td>
+				<td>{{ encuesta.5 }}</td>
+				<td>{{ encuesta.6 }}</td>
+				<td>{{ encuesta.7 }}</td>
+				<td>{{ encuesta.9 }}</td>
+				<td>
+					<a href="/edit/{{encuesta.0}}"><button type="submit" >Editar</button></a>
+					
+					<a href="/cargar/{{encuesta.0}}"><button type="submit">Cargar</button></a>
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+</table>
+</div>
+</body>
+<style>
+	#main-container{
+	margin: 150px auto;
+	width: 600px;
+}
+table{
+	background-color:white;
+
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+</style>
+</html>

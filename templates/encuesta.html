@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encuesta</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="encuesta.css">
+</head>
+<body>
+	<center>
+		<h1>Tu opinión es importante para nosotros</h1>
+		<h4>Responde las siguientes preguntas con sinceridad</h4>
+	</center>
+		<form class= "formulario" method="POST" action="/encuesta">
+			<label>1.¿Cómo estuvo el sonido del evento?</label><br>
+			<input type="radio" name="1" value="Bien">
+			<label>Bien</label>
+			<input type="radio" name="1" value="Regular">
+			<label>Regular</label>
+			<input type="radio" name="1" value="Mal">
+			<label>Mal</label><br>
+			<label>2.¿El mesero fue amable con usted?</label><br>
+			<input type="radio" name="2" value="Bien">
+			<label>Si</label>
+			<input type="radio" name="2" value="Regular">
+			<label>Regular</label>
+			<input type="radio" name="2" value="Mal">
+			<label>No</label><br>
+			<label>3.¿La iluminación del evento fue adecuada?</label><br>
+			<input type="radio" name="3" value="Bien">
+			<label>Si</label>
+			<input type="radio" name="3" value="Regular">
+			<label>Regular</label>
+			<input type="radio" name="3" value="Mal">
+			<label>No</label><br>
+			<label>4.La puntualidad del host fue:</label><br>
+			<input type="radio" name="4" value="Bien">
+			<label>Buena</label>
+			<input type="radio" name="4" value="Regular">
+			<label>Regular</label>
+			<input type="radio" name="4" value="Mal">
+			<label>Mala</label><br>
+			<label>5.Califique los baños:</label><br>
+			<input type="radio" name="5" value="Bien">
+			<label>Limpios</label>
+			<input type="radio" name="5" value="Regular">
+			<label>Regular</label>
+			<input type="radio" name="5" value="Mal">
+			<label>Sucios</label><br>
+			<label>6.¿Qué fue lo que más te gusto del lugar?</label><br>
+			<input type="text" name="o" placeholder="Su opinión es importante"><br>
+            <input type="submit">
+		</form>
+</body>
+</html>

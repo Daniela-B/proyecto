@@ -1,0 +1,34 @@
+<a href="/inicio"><button name="inicio">Volver al inicio</button></a>
+<table>
+	<thead>
+		<tr>
+			<td>Numero Total de Encuestas Cargadas</td>
+			<td>Numero Total de Encuestas No Cargadas</td>
+			<td>Numero Total de Encuestas</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>{{ revisado[0] }}</td>
+			<td>{{ norevisado[0] }}</td>
+			<td>{{ total[0] }}</td>
+		</tr>
+	</tbody>
+	<style>
+		#main-container{
+		margin: 150px auto;
+		width: 600px;
+	}
+	table{
+		background-color:white;
+	
+		text-align: center;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	thead{
+		background-color: #246355;
+		border-bottom: solid 5px #0F362D;
+		color: white;
+	}
+	</style>

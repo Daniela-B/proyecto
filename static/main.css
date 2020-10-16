@@ -1,0 +1,19 @@
+#main-container{
+	margin: 150px auto;
+	width: 600px;
+}
+table{
+    background-color: turquoise;
+    text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+body
+{
+    background: turquoise;
+}
